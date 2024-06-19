@@ -36,7 +36,7 @@ print(ratings_matrix)
 # 3개 클러스터링 하기
 from sklearn.cluster import KMeans
 
-kmeans = KMeans(n_clusters = 3, random_state=42, n_init = 10)
+kmeans = KMeans(n_clusters = 3, n_init = 10)
 kmeans.fit(ratings_matrix)
 
 labels = kmeans.labels_
